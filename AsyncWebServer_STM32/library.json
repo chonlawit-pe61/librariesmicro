@@ -1,0 +1,47 @@
+{
+  "name":"AsyncWebServer_STM32",
+  "version": "1.2.5",
+  "description":"Asynchronous HTTP and WebSocket Server Library for STM32F/L/H/G/WB/MP1 using LAN8742A Ethernet",
+  "keywords":"http,async,websocket,webserver,stm32f,stm32l,stm32h,stm32g,stm32wb,stm32mp1,ethernet,lan8742a",
+  "authors": 
+  [
+    {
+      "name": "Hristo Gochkov",
+      "url":   "https://github.com/me-no-dev"
+    },
+    {
+      "name":  "Khoi Hoang",
+      "url":   "https://github.com/khoih-prog",
+      "email": "khoih.prog@gmail.com",
+      "maintainer": true
+    }  
+  ],
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/khoih-prog/AsyncWebServer_STM32"
+  },
+  "license": "MIT",
+  "frameworks": "arduino",
+  "dependencies": 
+  [
+    {
+      "owner": "stm32duino",
+      "name": "STM32duino LwIP",
+      "version": "^2.1.2",
+      "platforms": "ststm32"
+    },
+    {
+      "owner": "stm32duino",
+      "name": "STM32Ethernet",
+      "version": "^1.2.0",
+      "platforms": "ststm32"
+    },
+    {
+      "name": "external-repo",
+      "version": "https://github.com/philbowles/STM32AsyncTCP"
+    }
+  ],
+  "platforms": ["ststm32"],
+  "examples": "examples/*/*/*.ino"
+}
